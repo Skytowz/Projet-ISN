@@ -1,0 +1,14 @@
+OUVRIR LE HTML AVEC CHROME !
+
+Manuel : 
+
+J'ai avancé dans le pong :
+-quand la balle passe derriere le perso et donc sort du canvas ,elle reprend sa place initial aux milieux du canvas.
+-on peut choisir la direction de la balle celon l'endroit avec lequel on colisione
+
+
+J'ai aussi créé deux nouveaux fichier :
+-DOM.js où j'ai mis les gestionaires devenements ( j'ai enlevé tous les onClick du html ).
+-librairie.js où j'ai mis les fonctions que j'utilise dans plusierus script.
+
+Lucas :

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		ArcadeEscape
+	</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="mario.ico">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<div id="test1">
+		<!-- <input class="test" type="button"  value="test" onClick="test1()">
+		<input class="test" type="button"  value="test 2" onClick="test2()"> -->
+		<img src="croixRouge.png" class="quitter">
+	</div>
+
+
+
+
+	<div class="principal">
+
+		<div id="baniere">
+			<div id="star1"></div>
+			<div id="star2"></div>
+			<div id="star3"></div>
+		</div>
+
+
+
+		<canvas id="jeux" width="528" height="528"></canvas>
+		<canvas id="perso" width="528" height="528"></canvas>
+
+	</div>
+
+    <div id="div1">
+
+
+
+				<canvas id="boy" width="330" height="575"></canvas>
+				<div id="tuto1">
+					<div class="f1"></div>
+					<div class="f2"></div>
+					<div class="f3"></div>
+					<div class="f4"></div>
+					<div class="f5"></div>
+					<div class="ex1">Changer de couleur</div>
+					<div class="ex2">Play</div>
+					<div class="ex3">Reset</div>
+          <div class="ex4">Fermer console</div>
+
+
+				</div>
+				<div id="tabScore" width="50" height="50"></div>
+				<canvas id="hardMode" width="250" height="30"></canvas>
+
+				<input class="button1" type="button"  value="P">
+				<input class="button2" type="button"  value="R">
+				<input class="button3" type="button">
+				<input class="button4" type="button">
+				<input class="button5" type="button">
+
+					<div class="div2">
+						<canvas id="mon_canvas" width="276" height="276"></canvas>
+					</div>
+			</div>
+
+			<div id="Advance">
+				<canvas id="advance" width="340" height="205"></canvas>
+				<input class="button6" type="button">
+                <input class="button7" type="button"  value="P">
+                <div id="chrono" >
+
+                    <img src="cochon.png" class="cochon">
+                    <img src="cheval.png" class="cheval">
+                    <img src="toro.png" class="toro">
+
+                    <div id="chronoDeux">
+                        <div id="chronoTrois">
+                            <div id="chronoQuatre">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<div id="psp">
+
+	        <canvas id="labi" width="510" height="300" ></canvas>
+	        <canvas id="ombre"  width="510" height="300"></canvas>
+
+	    </div>
+
+
+	 <div id="gris">
+
+	</div>
+
+	<div id="box1">
+
+			<h1 class="titre"><span class="A">A</span><span class="r">r</span><span class="c">c</span><span class="a">a</span><span class="d">d</span><span class="e">e</span><span class="E">E</span><span class="s">s</span><span class="c1">c</span><span class="a1">a</span><span class="p">p</span><span class="e1">e</span></h1>
+
+
+			<p class="nom"><span class="a">B</span><span class="e">y</span> <span class="A">L</span><span class="r">u</span><span class="c" >c</span><span class="a1">a</span><span class="s">s</span> <span class="a">a</span><span class="c1">n</span><span class="d">d</span> <span class="r">M</span><span class="a">a</span><span class="c1">n</span><span class="r">u</span><span class="e">e</span><span class="c">l</span></p>
+
+			<div class="loader">
+
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<div class="cercle">
+					<p class="demarrer">PLAY</p>
+				</div>
+			</div>
+	</div>
+
+
+	<div id="box2">
+
+		<div id="detail">
+
+
+				<p id="expliquation1">
+				Dans un monde où la jeunesse est saturée de nouvelles technologies, nous voulons montrer d’où proviennent toutes ces technologies, en les amenant à se plonger dans les premiers jeux de l’histoire du jeux vidéo
+.				</p>
+
+				<p id="expliquation2">
+				TUTO:
+				<br>
+				<br>
+				Lancer un jeu:
+				<br>
+				approcher vous de la table et appuyer sur entrer
+				<br>
+				<br>
+				Se deplacer:
+				<br>
+				fleche directionnelle
+				<br>
+				<br>
+				Rage Quit:
+				<br>
+				Alt+F4
+				</p>
+
+				<p id="expliquation3">Est tu un garçon ou une fille?
+		 		<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<img src="pers1.png" class="garçon">
+				<img src="pers1.png" class="fille">
+				</p>
+
+				<p id="expliquation4">
+				Amusez vous bien!! :D
+				<br>
+				<br>
+				Crédit:
+				<br>
+				<br>
+				Manuel
+				<br>
+				<br>
+				Lucas
+				<br>
+				<br>
+				<img src="jouer1.png" class="play">
+				</p>
+
+				<p class="triangleg"><<</p>
+				<p class="triangled">>></p>
+
+
+		</div>
+
+	</div>
+
+
+
+	<script type="text/javascript">
+
+		var mana = 0; //sert a determiner combien de fois on a cické sur les fleche de gauche ou les fleche de droite sur la page d'acceuil
+
+		function site ()
+		{
+			document.getElementById("box1").classList.add("site");
+			document.getElementById("gris").classList.add("site");
+			document.getElementById("box2").classList.add("site");
+
+
+			dessinerMap(11,11,map1);
+			marcher();
+		}
+
+		function siteE ()
+		{
+			location.reload();
+		}
+
+		function resume ()
+		{
+			document.getElementById("box1").classList.remove("FLOUEE");
+			document.getElementById("box1").classList.add("FLOUE");
+			document.getElementById("box2").classList.remove("MILIEUE");
+			document.getElementById("box2").classList.add("MILIEU");
+			mana++;
+		}
+
+		function flecheG()
+		{
+			if(mana==1)
+			{
+			document.getElementById("box1").classList.add("FLOUEE");
+			document.getElementById("box1").classList.remove("FLOUE");
+			document.getElementById("box2").classList.add("MILIEUE");
+			document.getElementById("box2").classList.remove("MILIEU");
+			}
+
+			if(mana==2)
+			{
+			document.getElementById("expliquation1").classList.remove("enleverTexte");
+			document.getElementById("expliquation1").classList.add("mettreTexte");
+			document.getElementById("expliquation2").classList.add("enleverTexte");
+			document.getElementById("expliquation2").classList.remove("mettreTexte");
+			}
+
+			if(mana==3)
+			{
+			document.getElementById("expliquation2").classList.remove("enleverTexte");
+			document.getElementById("expliquation2").classList.add("mettreTexte");
+			document.getElementById("expliquation3").classList.add("enleverTexte");
+			document.getElementById("expliquation3").classList.remove("mettreTexte");
+			}
+
+			if(mana==4)
+			{
+			document.getElementById("expliquation3").classList.remove("enleverTexte");
+			document.getElementById("expliquation3").classList.add("mettreTexte");
+			document.getElementById("expliquation4").classList.add("enleverTexte");
+			document.getElementById("expliquation4").classList.remove("mettreTexte");
+		 	}
+
+
+
+			mana--;
+
+
+
+		}
+
+		function flecheD ()
+		{
+			if(mana==1)
+			{
+			document.getElementById("expliquation1").classList.remove("mettreTexte");
+			document.getElementById("expliquation1").classList.add("enleverTexte");
+			document.getElementById("expliquation2").classList.remove("enleverTexte");
+			document.getElementById("expliquation2").classList.add("mettreTexte");
+			}
+
+			if(mana==2)
+			{
+			document.getElementById("expliquation2").classList.remove("mettreTexte");
+			document.getElementById("expliquation2").classList.add("enleverTexte");
+			document.getElementById("expliquation3").classList.remove("enleverTexte");
+			document.getElementById("expliquation3").classList.add("mettreTexte");
+			}
+
+			if(mana==3)
+			{ 
+			document.getElementById("expliquation3").classList.remove("mettreTexte");
+			document.getElementById("expliquation3").classList.add("enleverTexte");
+		 	document.getElementById("expliquation4").classList.remove("enleverTexte");
+			document.getElementById("expliquation4").classList.add("mettreTexte");
+			}
+
+			if(mana<4)
+			{
+				mana++;
+			}
+
+		}
+
+
+
+
+
+	</script>
+
+
+
+    <script type="text/javascript" src="librairie.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="map.js"></script>
+		<script type="text/javascript" src="Advance.js"></script>
+		<script type="text/javascript" src="psp.js"></script>
+    <script type="text/javascript" src="DOM.js"></script>
+
+
+</body>
+</html>

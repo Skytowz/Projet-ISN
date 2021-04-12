@@ -1,0 +1,13 @@
+document.getElementsByClassName('triangleg')[0].addEventListener('click',flecheG);
+document.getElementsByClassName('triangled')[0].addEventListener('click',flecheD);
+document.getElementsByClassName('play')[0].addEventListener('click',site);
+document.getElementsByClassName('cercle')[0].addEventListener('click',resume);
+document.getElementsByClassName('button1')[0].addEventListener('click',go);
+document.getElementsByClassName('button2')[0].addEventListener('click',Recommencer);
+document.getElementsByClassName('button3')[0].addEventListener('click',enlever);
+document.getElementsByClassName('button4')[0].addEventListener('click',Cplus);
+document.getElementsByClassName('button5')[0].addEventListener('click',Cmoins);
+document.getElementsByClassName('button6')[0].addEventListener('click',enleverAd);
+document.getElementsByClassName('button7')[0].addEventListener('click',commencerAd);
+document.getElementsByClassName('quitter')[0].addEventListener('click',siteE)
+document.getElementsByClassName()
